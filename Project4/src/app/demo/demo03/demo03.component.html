@@ -1,0 +1,31 @@
+<p>demo03 works!</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header db-success">
+                    Pipes personalizzato: trasformaz di data da secondi in gg hh ...
+                </div>
+                <div class="card-body">
+                    <p class="card-text">secondi:  {{nbSeconds}}</p><br>
+                    <p class="card-text">in j-h-m)s:  {{nbSeconds |convertSeconds}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header db-success">
+                    Pipes personalizzato: elevare alla potenza
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Base:  {{base1}} - alla potenza {{monPow}}</p><br>
+                    <p class="card-text">Con il pipe:  {{base1 |pow : monPow}}</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div><br>

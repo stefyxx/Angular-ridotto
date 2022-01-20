@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+        <!--normalmente ho dei routerLink-->
+        <!--<a class="navbar-brand" href="#home">Navbar</a>-->
+        <a class="navbar-brand" routerLink="/">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!--piccola diff se lascio href="#" mi permette di non caricare realmente pag 'demo'-->
+                    <a class="nav-link dropdown-toggle" routerLink="demo" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Demo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" routerLink="demo/demo01">Demo 1</a></li>
+                        <li><a class="dropdown-item" routerLink="demo/demo02">Demo 2</a></li>
+                        <li><a class="dropdown-item" routerLink="demo/demo03">Demo 3</a></li>
+                        <li><a class="dropdown-item" routerLink="demo/demo04">Demo 4</a></li>
+                        <li><a class="dropdown-item" routerLink="demo/demo05">Demo 5 temp Prof</a></li>
+                        <li><a class="dropdown-item" routerLink="demo/demo06">Demo 6 direttive-component</a></li>
+                        <li><a class="dropdown-item" routerLink="demo/demo07">Demo 7 input-output</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Ecercises
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" routerLink="exercise/exo01">Exo 1</a></li>
+                        <li><a class="dropdown-item" routerLink="exercise/exo02">Exo 02</a></li>
+                        <li><a class="dropdown-item" routerLink="exercise/exo03">Exo 03</a></li>
+                        <li><a class="dropdown-item" routerLink="exercise/exo04">Exo 04</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

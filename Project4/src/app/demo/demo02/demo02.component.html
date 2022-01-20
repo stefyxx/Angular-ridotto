@@ -1,0 +1,46 @@
+<p>demo02 works!</p>
+<h2>Pipes pre-esistenti</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    pipes string 
+                </div>
+                <div class="card-body">
+                    <p class="card-text">La mia prima variabile {{maVar1}}</p>
+                    <p class="card-text">con pipe {{maVar1 | uppercase}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    pipes number 
+                </div>
+                <div class="card-body">
+                    <p class="card-text">La mia seconda variabile {{maVar2}}</p>
+                    <p class="card-text">con pipe {{maVar2 |number}}</p>
+                    <p class="card-text">con pipe et  {{maVar2 |number:'6.1-2'}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    pipes date 
+                </div>
+                <div class="card-body">
+                    <p class="card-text">La mia terza variabile {{maVar3}}</p><br>
+                    <p class="card-text">con pipe {{maVar3 |date}}</p><br>
+                    <p class="card-text">con pipe et  {{maVar3 |date:'dd/MM/yyyy'}}</p><br>
+                    <p class="card-text">con pipe et  {{maVar2 |date:'dd/MM/yyyy hh:mm:ss'}}</p><br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><br>

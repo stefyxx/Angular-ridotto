@@ -1,0 +1,16 @@
+<p>demo07 works!</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header db-success">input output</div>
+                <div class="card-body">
+                    <!--qui ci attacco il Component e recupero le sue variabili-->
+                    <!--poi, in queste variabili injetto dei valori /delle variabili(stessotipo) di questo component-->
+                    <app-ti-attacco [figlioVar]="parentVar"></app-ti-attacco>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

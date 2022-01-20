@@ -1,0 +1,4 @@
+<h2>{{seconds | timerView}}</h2>
+<input type="button" value="Start" (click)="startChrono()" [disabled]="isActive">
+<input type="button" value="Pause" (click)="pauseChrono()" [disabled]="!isActive">
+<input type="button" value="Reset" (click)="resetChrono()" [disabled]="seconds == 0">

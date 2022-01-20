@@ -1,0 +1,20 @@
+<p>demo04 works!</p>
+<div>
+  <div>
+    <p>inserisci la tua temperatura</p>
+    <p> {{nbTemperature}} </p>
+
+    <input type="number" [(ngModel)]="nbTemperature">
+  </div>
+  <div>
+    <p>E in farenaith o Celsius?</p>
+    <button (click)="celsius()"> F° convertiti in C°</button>
+    <br />
+    
+    <button (click)="farenheit()"> C° convertiti in F°</button>
+    
+    <p>Con pipe de C° en F°: {{nbTemperature | temperatureFarenheit}}</p>
+    <br>
+    <p>Temperatura : {{nbTemperature}} {{strTemperatura}}</p>
+  </div>
+</div>

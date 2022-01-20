@@ -1,0 +1,9 @@
+<h2>{{product.name | uppercase}}</h2>
+<!-- VISUALIZZO IL PREZZO/ CAMBIA 'currenty' PER VEDERE LA DIFF  currency : "EUR":"code":"3.1-1"-->
+<p>{{product.price | currency : "EUR"}}</p>
+<!-- tu puoi fare del 'binding anche qui' -->
+<p>{{(product.quantity<5)?"attenzione ne restano solo "+product.quantity : "Ce ne sono in stock"}}</p>
+
+<P>{{product | json}}</P>
+<!-- 3 | toFahrenheit -->
+<p>La temperatura é di {{3 | toFahrenheit:true:false}}</p>

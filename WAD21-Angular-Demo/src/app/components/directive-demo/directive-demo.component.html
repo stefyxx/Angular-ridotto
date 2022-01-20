@@ -1,0 +1,34 @@
+<h3>Démo directives</h3>
+
+<h4>*NGIF</h4>
+<div (click)="switchVisible()" style="border: 1px black solid; background-color: antiquewhite;">
+    <p style="cursor: pointer;">Click ici</p>
+</div>
+<div *ngIf="IsVisible" style="border: 1px black solid">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint odio corporis sapiente culpa nobis. Quisquam placeat eius culpa repellendus. Sapiente sunt ad beatae libero minus voluptates quaerat amet eum in.</p>
+</div>
+
+<h4>*NGFOR</h4>
+<ul>
+    <li *ngFor="let mot of maListe; 
+                let i = index; 
+                let pair = even">
+
+        <p [ngClass]="{maClasse : pair}">
+            {{i}} - {{mot}} 
+            <button (click)="supprimer(i)">Supprimer</button>
+        </p>
+    </li>
+</ul>
+
+<h4>*NGSWITCH</h4>
+
+<input type="text" [(ngModel)]="maVariable" />
+<p>{{maVariable}}</p>
+
+<div [ngSwitch]="maVariable">
+    <div *ngSwitchCase="1">Bonjour</div>
+    <div *ngSwitchCase="2">Au revoir</div>
+    <div *ngSwitchCase="3">Bonne nuit</div>
+    <div *ngSwitchDefault>Entrez 1, 2 ou 3</div>
+</div>

@@ -1,0 +1,38 @@
+<p>direttive works!</p>
+
+<h2>Esempio con *ngIf:</h2>
+<div (click)="isActive()" style="border: 2px red solid; background-color: rgba(0, 255, 255, 0.212);">
+    <p style="cursor: pointer; text-align: center;">Chicca qui'</p>
+</div>
+<div *ngIf="active" style="border: 3px black solid; margin:3px; padding: 3px;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique fugit quos veniam sunt dolores odit
+        suscipit corporis aut velit!</p>
+</div>
+
+<h2>Esempio con *ngFor:</h2>
+<ul>
+    <li *ngFor="let mot of myList; 
+                    let i = index; 
+                    let pair= even">
+        <!-- even é una funz che prende nb->nb.isPair -->
+
+        <p [ngClass]="{maClass : pair}">
+<!-- utilizzare ngClass mi permette di scrivere l'espressione a fianco  -->
+            {{i}} - {{mot}}
+
+            <button (click)="supprimer(i)">Sopprimere</button>
+        </p>
+    </li>
+</ul>
+
+<h2>Esempio con *ngSwitchCase:</h2>
+<input [(ngModel)]="maVariable" /> 
+<!-- non recupera solamente il Model(testo) ma inserisce il maVrariable il valore scritto nell'input -->
+<div [ngSwitch]="maVariable">
+<!-- ngSwhitch legge il valore in maVariable e lo compara ai switch cases -->
+    <div *ngSwitchCase="1">Bonjour</div>
+    <div *ngSwitchCase="2">Salut</div>
+    <div *ngSwitchCase="3">Bonne nuit</div>
+    <div *ngSwitchDefault>scrivere 1 o 2 o 3</div>
+
+    </div>

@@ -1,0 +1,25 @@
+ul {
+    padding : 0;
+    list-style-type: none;
+    font-weight: bold;
+}
+ul li{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+a {
+    color : black;
+    font-size : 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    color : blueviolet;
+    text-decoration: underline;
+}
+
+.category {
+    text-decoration: underline;
+    cursor: pointer;
+}

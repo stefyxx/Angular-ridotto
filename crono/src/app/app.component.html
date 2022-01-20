@@ -1,0 +1,12 @@
+
+<h2> Il mio cronometro </h2>
+
+<input type="button" value="Start" (click)="Start()" [disabled]="isActive">
+<br><br>
+<input type="button" value="Pause" (click)="Pause()" [disabled]="!isActive">
+<br><br>
+<input type="button" value="Reset" (click)="Reset()" [disabled]="secondes==0">
+
+<!-- <h2>{{minutes}} minutes {{secondes}} secondes</h2> -->
+
+<h2>{{secondes | crono}}</h2>

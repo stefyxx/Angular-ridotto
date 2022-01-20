@@ -1,0 +1,5 @@
+<p (click)="isVisible()">Demo</p>
+<ul *ngIf="visible"> <!-- [hidden]="visible"-->
+    <li *ngFor="let link of listaLink"><a routerLink="{{link.url}}">{{link.name}}</a></li>
+    <!-- <a [routerLink]="link.url">{{link.name}}</a> -->
+</ul>

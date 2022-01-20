@@ -1,0 +1,58 @@
+<p>exo02 works!</p>
+<h2>Propety binding</h2>
+<h3>two-way</h3>
+<h4>Utilizzando [(ngModel)]="nomVar" posso cambiare il valore di nomVar</h4>
+<h4 style="border:red solid 2px; border-radius:20px; padding: 5px;"> nota bene il type dell'input</h4>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Propety binding: two-way
+                </div>
+                <div class="card-body">
+                    <p class="card-text">La mia prima variabile "{{maVar1}}"</p>
+                    <input type="text" class="form-control" [(ngModel)]="maVar1">
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Binding de Number
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Ma variable "maVariable2" vaut "{{ maVariable2 }}"
+                    </p>
+
+                    <input type="number" class="form-control" [(ngModel)]="maVariable2">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+
+                <div class="card-header bg-success text-white">
+                    Binding de String
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text">
+                        Ma variable "maVariable3" vaut "{{ maVariable3 }}"
+                    </p>
+                    <input type="checkbox" class="form-check-input" [(ngModel)]="maVariable3">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<p>exo04 works!</p>
+<h3>EVENT</h3>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Event binding
+                </div>
+                <div class="card-body">
+                    <p class="card-text" [hidden]="maVar">Il mio testo appare</p>
+                    <!--Checkbox fa le veci di una fonzione: this.maVar = !this.maVar -->
+                    <input type="checkbox" class="form-check-input" [(ngModel)]="maVar">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<h1>Demo 04 - Attributes Binding</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Attributes binding
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Ma variable "maVariable1" vaut "{{ isDisabled }}"
+                    </p>
+                    <input type="checkbox" class="form-check-input" [(ngModel)]="isDisabled">&nbsp;
+
+                    <button class="btn btn-success" [disabled]="isDisabled">Click on me !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>

@@ -1,0 +1,56 @@
+<p>exo03 works!</p>
+<h3>EVENT Binding</h3>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Event binding: one-clich
+                </div>
+                <div class="card-body">
+                    <p class="card-text">La mia prima variabile {{monNum}}</p>
+                    <button class="btn btn-success" (click)="increase()">+</button><span>&nbsp;</span>
+                    <!--button.btn.btn-success-->
+                    <button class="btn btn-danger" (click)="decrease()">-</button><span>&nbsp;</span>
+                    <button class="btn btn-light" (click)="reseat()">Reseat</button>
+
+                </div>
+                <br>
+                <div class="card-header db-success text-white">
+                    Event binding: (mouseover)
+                </div>
+                <div class="card-body">
+                    <p class="card-text">La mia prima variabile {{monNum}}</p>
+                    <button class="btn btn-success" (mouseover)="increase()">+</button><span>&nbsp;</span>
+                    <!--button.btn.btn-success-->
+                    <button class="btn btn-danger" (mouseover)="decrease()">-</button><span>&nbsp;</span>
+                    <button class="btn btn-light" (mouseover)="reseat()">Reseat</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card">
+
+                <div class="card-header bg-success text-white">
+                    La liste des events
+                </div>
+
+                <div class="card-body">
+
+                    <ul class="list-group">
+                        <li class="list-item"><strong>click</strong> : au clic de la souris</li>
+                        <li class="list-item"><strong>dblclick</strong> : au double-clic de la souris</li>
+                        <li class="list-item"><strong>dblclick</strong> : au double-clic de la souris</li>
+                        <li class="list-item"><strong>mouseup</strong> : au relâchement du clic de la souris</li>
+                        <li class="list-item"><strong>mousedown</strong> : au clic de la souris</li>
+                        <li class="list-item"><strong>mouseover</strong> : à la superposition du curseur avec l'élément
+                        </li>
+                        <li class="list-item"><strong>...</strong> : ...</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>

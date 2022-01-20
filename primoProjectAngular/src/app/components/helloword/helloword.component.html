@@ -1,0 +1,9 @@
+<p>hello word works!</p>
+<h3>evviva</h3>
+<h3>{{message}}{{students}}</h3>
+<input type="text" [(ngModel)]="students" [disabled]="validate"> 
+<!-- opp [hidden]="validate" -->
+<input type="button" value="save" (click)="saveStudent()">
+
+<div>Compteur: {{compteur}}</div>
+<input type="button" value="+" (click)="AddOne()" (dblclick)="AddOne2(10)">
