@@ -1,0 +1,67 @@
+<h1>Demo 8 - Directives structurelles</h1>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-6 mb-3">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+            Directive structurelles - NgIf
+        </div>
+        <div class="card-body">
+          <button class="btn btn-success" (click)="toggle()">Afficher : {{ show }}</button>
+          <p *ngIf="show">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facilis incidunt id vitae sapiente aspernatur numquam, blanditiis molestias soluta deserunt recusandae dolores! Unde commodi nam esse vel, deleniti sequi molestias?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 mb-3">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Directives structurelles - NgFor
+        </div>
+        <div class="card-body">
+          <p *ngFor="let person of persons" [ngClass]="getClass(person.countryTag)">
+            {{ person.name }} : {{ person.countryTag }} : {{ person.lang }}
+          </p>
+
+          <hr>
+
+          <p *ngFor="let person of persons; let i = index;" [ngClass]="getClass(person.countryTag)">
+            {{ i }} {{ person.name }} : {{ person.countryTag }} : {{ person.lang }}
+          </p>
+
+          <hr>
+
+          <p *ngFor="let mot of liste2 | keyvalue">
+            {{ mot.key }} : {{ mot.value }}
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 mb-3">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Directive structurelles - NgSwitch
+        </div>
+        <div class="card-body">
+          <input type="number" min="1" max="4" [(ngModel)]="maVariable">
+
+          <div [ngSwitch]="maVariable">
+            <div *ngSwitchCase="1">Choix 1</div>
+            <div *ngSwitchCase="2">Choix 2</div>
+            <div *ngSwitchCase="3">Choix 3</div>
+            <div *ngSwitchCase="4">Choix 4</div>
+            <div *ngSwitchDefault>Choisissez une valeur entre 1 et 4.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>    
+
+  </div>
+</div>

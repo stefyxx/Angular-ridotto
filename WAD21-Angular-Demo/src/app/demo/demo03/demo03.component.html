@@ -1,0 +1,69 @@
+<h1>Demo 03 - Les Events Binding</h1>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <div class="col">
+        <div class="card">
+
+          <div class="card-header bg-success text-white">
+            Event Binding : (click)
+          </div>
+
+          <div class="card-body">
+
+            <p class="card-text">La valeur du nombre : {{ nb }}</p>
+
+            <button class="btn btn-success" (click)="increase()">+</button>&nbsp;
+            <button class="btn btn-danger" (click)="decrease()">-</button>&nbsp;
+            <button class="btn btn-light" (click)="reset()">Reset</button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col">
+        <div class="card">
+
+          <div class="card-header bg-success text-white">
+            Event Binding : (mouseover)
+          </div>
+
+          <div class="card-body">
+
+            <p class="card-text">La valeur du nombre : {{ nb2 }}</p>
+
+            <button class="btn btn-success" (mouseover)="increase2()">+</button>&nbsp;
+            <button class="btn btn-danger" (mouseover)="decrease2()">-</button>&nbsp;
+            <button class="btn btn-light" (mouseover)="reset2()">Reset</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          La liste des events
+        </div>
+
+        <div class="card-body">
+
+          <ul class="list-group">
+            <li class="list-item"><strong>click</strong> : au clic de la souris</li>
+            <li class="list-item"><strong>dblclick</strong> : au double-clic de la souris</li>
+            <li class="list-item"><strong>mouseup</strong> : au relâchement du clic de la souris</li>
+            <li class="list-item"><strong>mousedown</strong> : au clic de la souris</li>
+            <li class="list-item"><strong>mouseover</strong> : à la superposition du curseur avec l'élément</li>
+            <li class="list-item"><strong>...</strong> : ...</li>
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

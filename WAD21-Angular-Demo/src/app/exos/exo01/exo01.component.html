@@ -1,0 +1,44 @@
+<h1>Exercice 1</h1>
+
+<p>Vous devez entrer une température dans un input et définir l'unité de la température (exemple : C° ou F°)</p>
+
+<p>Ensuite, grâce à un pipe, afficher un récap de la température dans les deux unités de mesure.</p>
+
+<p>Avant : xx F°</p>
+
+<p>Après : XX C°</p>
+<p>Après : XX F°</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Conversion C° -> F° && F° -> C°
+        </div>
+
+        <div class="card-body">
+          <div class="mb-3">
+            <input type="number" [(ngModel)]="tempUser">
+            <select [(ngModel)]="unitUser">
+              <option value="c">Celcius</option>
+              <option value="f">Fahrenheit</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <p>Avant : {{ tempUser }} {{ unitUser | uppercase }}°</p>
+            <p>Après F° : {{ tempUser | convertTemp : 'f' : unitUser }}</p>
+            <p>Après C° : {{ tempUser | convertTemp : 'c' : unitUser }}</p>
+
+            <hr>
+
+            <p>Après C° : {{ tempUser | convertTemp }}</p>
+            <p>Après C° : {{ tempUser | convertTemp }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

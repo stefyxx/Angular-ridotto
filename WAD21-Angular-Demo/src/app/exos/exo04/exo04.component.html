@@ -1,0 +1,18 @@
+<h1>Exercice 4 - Shopping List</h1>
+
+<p>
+  Mettre en place une shopping list en deux composant. <br>
+  Dans le premier, un champ texte permettant l’ajout d’un article à la liste <br>
+  Dans le deuxième, l’affichage de la liste et la possibilité de supprimer un article. <br>
+  Les deux composant doivent être afficher sur la même page
+</p>
+
+<input type="text" class="form-control" [(ngModel)]="article">
+<button class="btn btn-success" (click)="addToCart()">Ajouter</button>
+
+<app-liste 
+  [cart]="cart"
+  (eventDelete)="deleteToCart($event)"
+>
+<!-- eventDelete lié à l'output de l'enfant -->
+</app-liste>

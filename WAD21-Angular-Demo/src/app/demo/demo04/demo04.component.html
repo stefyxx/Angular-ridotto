@@ -1,0 +1,59 @@
+<h1>Demo 04 - Attributes Binding</h1>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Attributes binding
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">
+            Ma variable "maVariable1" vaut "{{ isEnabled }}"
+          </p>
+          <div class="form-check mb-3">
+            <label class="form-label" for="btn">Activer le bouton</label>
+            <input type="checkbox" id="btn" class="form-check-input" [(ngModel)]="isEnabled">&nbsp;
+          </div>
+          <button class="btn btn-success" [disabled]="!isEnabled">Click on me !</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Attributes binding
+        </div>
+
+        <div class="card-body">
+          <input type="text" [(ngModel)]="lastname">
+          <input type="text" [(ngModel)]="firstname">
+          <p class="card-text">{{lastname}} {{firstname}}</p>
+          <input type="text" [value]="lastname + ' ' + firstname ">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Attributes binding
+        </div>
+
+        <div class="card-body">
+          <input type="range" [(ngModel)]="value" [min]="min" [max]="max" [step]="step"> {{value}}
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

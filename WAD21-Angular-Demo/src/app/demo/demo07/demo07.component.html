@@ -1,0 +1,57 @@
+<h1>Demo 7 - Les directives de composants</h1>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-12 mb-3">
+      <div class="card">
+        <div class="card-header bg-success textwhite">
+          Directive de composant : NgStyle
+        </div>
+        <div class="card-body">
+          <p [ngStyle]="{'background-color': '#123456', 'color': 'white'}">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus debitis qui nulla similique, distinctio sunt commodi doloremque corporis odit accusantium fuga delectus atque sint quidem porro soluta aperiam eligendi obcaecati?
+          </p>
+
+          <p [ngStyle]="myCustomStyle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sapiente similique provident quidem repudiandae, non cupiditate. Doloribus, ipsa provident. Voluptatibus inventore eum totam error soluta ducimus nobis repellendus quo officiis?
+          </p>
+
+          <p [ngStyle]="myCustomStyle2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corporis porro exercitationem, autem omnis labore quasi, qui pariatur quos quam consequuntur maiores dignissimos dolor impedit! Totam, cum animi! Nihil, pariatur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mb-3">
+      <div class="card">
+        <div class="card-header bg-success textwhite">
+          Directive de composant : NgClass
+        </div>
+        <div class="card-body">
+          <p ngClass="alert alert-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos cumque ratione saepe, error minima nobis omnis ex repudiandae? Laborum, unde. Excepturi voluptate nemo quasi sequi necessitatibus inventore facilis id.
+          </p>
+
+          <p [ngClass]="'alert alert-danger'">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos cumque ratione saepe, error minima nobis omnis ex repudiandae? Laborum, unde. Excepturi voluptate nemo quasi sequi necessitatibus inventore facilis id.
+          </p>
+
+          <p [ngClass]="myCustomClass">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et itaque modi beatae aliquam aliquid esse hic reiciendis asperiores at quae sapiente explicabo animi numquam illum dolore, minus sunt voluptatum officia.
+          </p>
+
+          <p [ngClass]="{'alert alert-info' : isEnabled }" (click)="activate()">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et itaque modi beatae aliquam aliquid esse hic reiciendis asperiores at quae sapiente explicabo animi numquam illum dolore, minus sunt voluptatum officia.
+          </p>
+
+          <p [ngClass]="['alert', 'alert-warning']">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet iusto molestias quidem, laboriosam delectus qui laborum harum provident illo? Numquam necessitatibus voluptatum nihil animi et voluptatem quos, cumque rerum veritatis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

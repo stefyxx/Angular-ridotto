@@ -1,0 +1,20 @@
+<h1>Exo 3 - Directives Nav</h1>
+
+<div>
+  <ul>
+    <li *ngFor="let link of links; let i = index">
+      <a [routerLink]="link.url" (click)="toggleVisible(i)">
+        {{ link.title }}
+      </a>
+
+      <ul *ngIf="link.children && link.isVisible">
+        <li *ngFor="let sub of link.children">
+          <a [routerLink]="sub.url">
+            {{ sub.title }}
+          </a>
+        </li>
+      </ul>
+
+    </li>
+  </ul>
+</div>

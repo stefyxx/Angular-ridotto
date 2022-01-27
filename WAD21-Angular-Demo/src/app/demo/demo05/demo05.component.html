@@ -1,0 +1,55 @@
+<h1>Demo 05 - Les Pipes</h1>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Pipe sur les strings
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">Valeur de "maVariable1" : {{ maVariable1 }}</p>
+          <p class="card-text">avec Pipe "maVariable1" : {{ maVariable1 | uppercase }}</p>
+          <p class="card-text">avec Pipe "maVariable1" : {{ maVariable1 | lowercase }}</p>
+          <p class="card-text">avec Pipe "maVariable1" : {{ maVariable1 | titlecase }}</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Pipe sur les nombres
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">Valeur de "maVariable2" : {{ maVariable2 }}</p>
+          <p class="card-text">avec Pipe "maVariable2" : {{ maVariable2 | number }}</p>
+          <p class="card-text">avec Pipe "maVariable2" : {{ maVariable2 | number : '3.3-5' }}</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Pipe sur les dates
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">Valeur de "maVariable3" : {{ maVariable3 }}</p>
+          <p class="card-text">avec Pipe "maVariable3" : {{ maVariable3 | date }}</p>
+          <p class="card-text">avec Pipe "maVariable3" : {{ maVariable3 | date : 'dd/MM/yyyy hh:mm:ss' }}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,10 +1,29 @@
 <p>ti-attacco works!</p>
 
-<div class="col-4">
+<div class="col-12">
     <div class="card">
-        <div class="card-header db-success">input output figlio </div>
+        <div class="card-header bg-success text-white">input output figlio </div>
         <div class="card-body">
-            messaggio nel corpo del figlio ma contenuto del parente {{figlioVar}}
+            <p class [ngClass]="colorChild">
+                messaggio nel corpo del figlio ma contenuto del parente: {{figlioVar}}
+            </p>
+            <br>
+            <p>
+                Message provenant de l'input du parent : {{ figlioVarInput }}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-12">
+    <div class="card">
+        <div class="card-header  bg-success text-white">
+            Composant enfant
+        </div>
+        <div class="card-body">
+            <p class [ngClass]="colorChild" >
+                message du parent : {{ figlioVar }}
+            </p>
         </div>
     </div>
 </div>

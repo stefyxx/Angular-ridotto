@@ -1,9 +1,0 @@
-<h2>{{product.name | uppercase}}</h2>
-<p>{{product.price | currency:'EUR':'symbol':'1.2-2'}}</p>
-<p>{{(product.quantity < 5)
-    ? "Attention, il n'en reste plus que "+ product.quantity 
-    : "Il y en a de stock." }}</p>
-
-    <p>{{product | json}}</p>
-
-    <p>La température est de {{3 | toFahrenheit: true : true}}</p>

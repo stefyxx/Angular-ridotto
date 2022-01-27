@@ -1,0 +1,11 @@
+<h2>Article details</h2>
+
+<ul>
+  <li *ngFor="let article of cart; let i = index">
+    <button class="btn btn-danger" (click)="emitDeleteToCart(i)">X</button>
+    <!-- <button class="btn btn-danger" (click)="deleteToCart(i)">X</button> -->
+    {{ article }} <!-- one way-->
+     <!-- [(ngModel)] two way-->
+
+  </li>
+</ul>

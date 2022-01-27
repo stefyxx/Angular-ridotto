@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TiAttaccoComponent implements OnInit {
 
   @Input()figlioVar:string=""
+  @Input() colorChild : string = ""
+  @Input() figlioVarInput:string=""
 
   constructor() { }
 

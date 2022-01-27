@@ -1,0 +1,23 @@
+<p>e-shopping</p>
+<!--io sono il PADRE-->
+<h2>Benvenuti nel nostro magazino!</h2>
+<br>
+<app-input-output-figlio
+    [listaArticoliF]="listaArticoli"
+    [figlioVarInput]="parentVarInput" 
+    [figlioVarInput2]="parentVarInput2" 
+>
+</app-input-output-figlio>
+
+<br>
+<p>Aggiungi un articolo alla lista</p>
+<input type="text" [(ngModel)]="parentVarInput">
+<button (click)="aggiungi()">Aggiungi</button>
+<!--puoi aggiundere + parametri: split(',')  e dico di separae gli articoli con la ','-->
+<br>
+<br>
+<p>Sopprimi un articolo dalla lista</p>
+<input type="text" [(ngModel)]="parentVarInput2">
+<p class="alert alert-danger" [hidden]="nonAttivo">Questo articolo non esiste!</p>
+<button (click)="sopprimi()" [(ngModel)]="nonAttivo">Sopprimi</button>
+

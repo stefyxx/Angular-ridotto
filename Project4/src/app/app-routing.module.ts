@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Demo01Component } from './demo/demo01/demo01.component';
 import { Demo02Component } from './demo/demo02/demo02.component';
@@ -12,6 +12,11 @@ import { Exo02Component } from './exercise/exo02/exo02.component';
 import { Exo03Component } from './exercise/exo03/exo03.component';
 import { Exo04Component } from './exercise/exo04/exo04.component';
 import { HomeComponent } from './home/home.component';
+import {ExoInputOutput05Component} from './exercise/exo-input-output05/exo-input-output05.component';
+import { Demo08Component } from './demo/demo08/demo08.component';
+import { Exo05Component } from './exercise/exo05/exo05.component';
+
+
 //Routes é una tab con i diversi link delle diverse pag
 const routes: Routes = [
   {path:"",component: HomeComponent},
@@ -24,7 +29,8 @@ const routes: Routes = [
     {path:"demo04", component: Demo04Component},
     {path:"demo05", component: Demo05TemperatureProfComponent},
     {path:"demo06", component: Demo06DirettiveComponentComponent},
-    {path:"demo07", component: Demo07Component}
+    {path:"demo07", component: Demo07Component},
+    {path:"demo08", component: Demo08Component}
   ]},
   //oppure, direttamente
   /* {path:"",component: HomeComponent, children:[
@@ -34,7 +40,9 @@ const routes: Routes = [
     {path:"exo01", component: Exo01Component},
     {path:"exo02", component: Exo02Component},
     {path:"exo03", component: Exo03Component},
-    {path:"exo04", component: Exo04Component}
+    {path:"exo04", component: Exo04Component},
+    {path:"exo05", component: ExoInputOutput05Component},
+    {path:"exo05_bis", component: Exo05Component }
   ]}
 ];
 

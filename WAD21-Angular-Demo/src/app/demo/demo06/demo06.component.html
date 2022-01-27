@@ -1,0 +1,53 @@
+<h1>Demo 06 - Les Custom Pipes</h1>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Transfomation d'un nombre de secondes en jours - heures - minutes - secondes
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">Le nombre de secondes : {{ nbSeconds }}</p>
+          <p class="card-text">En J-H-M-S : {{ nbSeconds | convertSecondsToDHMS }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Transfomation d'un nombre de secondes en jours - heures - minutes - secondes
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">Le nombre de secondes : {{ nbSeconds2 }}</p>
+          <p class="card-text">En J-H-M-S : {{ nbSeconds2 | convertSecondsToDHMS }}</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  
+  <br>
+
+  <div class="row">
+
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Elever un nombre à une puissance
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">La base : {{ varBase }} - La puissance : {{ varPow }}</p>
+          <p class="card-text">Avec le pipe : {{ varBase | pow : varPow }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

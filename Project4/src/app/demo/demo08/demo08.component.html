@@ -1,0 +1,19 @@
+<p>demo08 works!</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-header bg-success">
+                    fake sessione di connessione | {{isConnected ? username : ""}} | {{isConnected}}
+                </div> <!--{{isConnected ? user.username : ""}}-->
+                <div class="card-body">
+                    <input type="text" class="form-control" [(ngModel)]="username">
+                    <br>
+                    <button class="btn btn-success" (click)="login()">LogIn</button>
+                    <button class="btn btn-danger" (click)="logout()">LogOut</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

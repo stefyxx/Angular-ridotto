@@ -1,0 +1,14 @@
+<p>La nostra lista: </p>
+
+<p *ngFor="let articolo of listaF; let n = index">
+    {{articolo}}
+    <button class="btn btn-success" (click)="addArticolo(n)">Aggiungi l'articolo alla tua lista</button>
+</p>
+
+<p>La tua lista: </p>
+<ul>
+    <li *ngFor="let articolo of listaMia;">
+        {{articolo}}
+    </li>
+
+</ul>

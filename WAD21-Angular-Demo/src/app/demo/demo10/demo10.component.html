@@ -1,0 +1,69 @@
+<h1>Demo 10 - Les Input/Ouput</h1>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- INPUT -->
+
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Input : Injecter une information du parent à l'enfant
+        </div>
+        <div class="card-body">
+          <app-child-input [messageChild]="messageParent" [colorChild]="colorParent"
+            [messageInputChild]="messageInputParent">
+          </app-child-input>
+
+          <button class="btn btn-success" (click)="changeColor()">Changer la couleur</button>
+          <br>
+          {{ messageInputParent }}
+          <br>
+          <input type="text" class="form-control" [(ngModel)]="messageInputParent">
+        </div>
+      </div>
+    </div>
+
+    <!-- OUTPUT -->
+
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Output : Injecter de l'enfant au parent
+        </div>
+        <div class="card-body">
+          <app-child-output (enterChild)="onParent($event)" (leaveChild)="onParent($event)">
+
+          </app-child-output>
+
+          <p>
+            message provenant de l'enfant : {{ messageByChild }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NGCONTENT -->
+
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Output : Injecter de l'enfant au parent
+        </div>
+        <div class="card-body">
+          <app-child-ngcontent>
+            <div class="card">
+              <div class="card-header">Component enfant</div>
+              <div class="card-body">
+                <p>
+                  Mon enfant
+                </p>
+              </div>
+            </div>
+          </app-child-ngcontent>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

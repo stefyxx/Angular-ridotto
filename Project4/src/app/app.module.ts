@@ -24,6 +24,11 @@ import { ConvertTempPipe } from './demo/demo05-temperature-prof/convert-temp.pip
 import { Demo06DirettiveComponentComponent } from './demo/demo06-direttive-component/demo06-direttive-component.component';
 import { Demo07Component } from './demo/demo07/demo07.component';
 import { TiAttaccoComponent } from './demo/demo07/ti-attacco/ti-attacco.component';
+import { ExoInputOutput05Component } from './exercise/exo-input-output05/exo-input-output05.component';
+import { InputOutputFiglioComponent } from './exercise/exo-input-output05/input-output-figlio/input-output-figlio.component';
+import { Demo08Component } from './demo/demo08/demo08.component';
+import { Exo05Component } from './exercise/exo05/exo05.component';
+import { FiglioListaComponent } from './exercise/exo05/figlio-lista/figlio-lista.component';
 
 
 
@@ -32,24 +37,29 @@ import { TiAttaccoComponent } from './demo/demo07/ti-attacco/ti-attacco.componen
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    Demo01Component,
     FootherComponent,
-    Exo01Component,
-    Exo02Component,
-    Exo03Component,
-    Exo04Component,
+    Demo01Component,
     Demo02Component,
     Demo03Component,
     ConvertSecondsPipe,
     PowPipe,
     Demo04Component,
+    ConvertTempPipe,
     TemperatureFarenheitPipe,
     TemperatureCelsiusPipe,
     Demo05TemperatureProfComponent,
-    ConvertTempPipe,
     Demo06DirettiveComponentComponent,
-    Demo07Component,
     TiAttaccoComponent,
+    Demo07Component,
+    Exo01Component,
+    Exo02Component,
+    Exo03Component,
+    Exo04Component,
+    ExoInputOutput05Component,
+    InputOutputFiglioComponent,
+    Demo08Component,
+    Exo05Component,
+    FiglioListaComponent,
 
 
   ],

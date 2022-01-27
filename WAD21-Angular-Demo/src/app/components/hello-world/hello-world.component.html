@@ -1,8 +1,0 @@
-<h1>hello-world works!</h1>
-<h3>{{message}}{{students}}!</h3>
-<input type="text" [(ngModel)]="students" [disabled]="validate">
-<input type="button" [value]="(validate)?'Change':'Save'" (click)="saveStudents()">
-
-<div>Compteur : {{compteur}}</div>
-Lors d'un click simple, ajoute un, si double click, ajoute 10 : 
-<input type="button" value="+" (click)="AddOne(1)" (dblclick)="AddOne(10)">

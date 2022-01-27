@@ -1,0 +1,14 @@
+<h1>Exercice 5 - Shopping List</h1>
+
+<p>
+  Optimiser la liste de course avec l’utilisation d’un service qui gère la liste et les méthodes qui peuvent s’y appliquer 
+  <br>
+  Ajouter la possibilité de gérer le nombre d’articles voulu (Ex : Lait x 6, Tomates x 3, …)
+</p>
+
+<input type="text" class="form-control" [(ngModel)]="article">
+<button class="btn btn-success" (click)="addToCart()">Ajouter</button>
+
+<app-liste [cart]="cart" (eventDelete)="deleteToCart($event)">
+  <!-- eventDelete lié à l'output de l'enfant -->
+</app-liste>

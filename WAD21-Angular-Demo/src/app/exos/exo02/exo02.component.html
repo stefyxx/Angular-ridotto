@@ -1,0 +1,31 @@
+<h2>Création d'un convertisseur de secondes en DHMS avec inputs</h2>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Elever un nombre à une puissance
+        </div>
+
+        <div class="card-body">
+
+          <div class="mb-3">
+            <label for="base" class="form-label">Entrez la base</label>
+            <input type="number" id="base" class="form-control" [(ngModel)]="varBase">
+          </div>
+
+          <div class="mb-3">
+            <label for="puissance" class="form-label">Entrez la puissance</label>
+            <input type="number" id="puissance" class="form-control" [(ngModel)]="varPow">
+          </div>
+
+          <p class="card-text">La base : {{ varBase }} - La puissance : {{ varPow }}</p>
+          <p class="card-text">Avec le pipe : {{ varBase | pow : varPow }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

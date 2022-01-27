@@ -14,3 +14,40 @@
         </div>
     </div>
 </div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Input : Injecter une informatique du parent à l'enfant
+                </div>
+                <div class="card-body">
+                    <app-ti-attacco [figlioVar]="parentVar" [colorChild]="colorParent">
+                    </app-ti-attacco>
+
+                    <button class="btn btn-success" (click)="changeColor()">Changer la couleur</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    sms recuperato dall'input del parente
+                </div>
+                <div class="card-body">
+                    <app-ti-attacco 
+                    [figlioVar]="parentVar" 
+                    [colorChild]="colorParent"
+                    [figlioVarInput]="parentVarInput">
+                    </app-ti-attacco>
+                    <br>
+                    <p>messaggio dall'input, sempre del parent {{parentVarInput}}</p>
+                    <input type="text" class="btn btn-success" [(ngModel)]="parentVarInput">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
